@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css">
+    <Title></Title>
+</head>
+<body>
+    <div class="container">
+    <div class="menu1">
+<center><a href="#" id="showlinks">Student</a></center>
+<center><div id="linkscontainer" style="display: none;">
+    <a href="#" >Add</a><br><br>
+    <a href="#" >Edit</a><br><br>
+    <a href="#" >Delete</a><br><br>
+
+</div></center>
+
+<center><a href="#" id="leclinks">Lecturer</a></center>
+<center><div id="leccontainer" style="display: none;">
+    <a href="#" >Add</a><br><br>
+    <a href="#" >Edit</a><br><br>
+    <a href="#" >Delete</a><br><br>
+
+    </div></center>
+    </div>
+
+    
+    <div class="menu3">
+        <center><h4>Student <br>Total</h4></center>
+        <center><input type="text" name="student" id="total"></center>
+
+    </div>
+    <div class="menu4">
+        <center><h4>Male </h4></center>
+       <center> <input type="text" name="student" id="total"></center>
+
+    </div>
+    <div class="menu5">
+        <center><h4>Female</h4></center>
+       <center> <input type="text" name="student" id="female_total" readonly></center>
+
+
+    </div>
+    <div id="graph_container">
+        <canvas id="mycanvas"></canvas>
+
+    </div>
+
+    <div class="menu6">
+       <center> <h4>Lecture <br>Total</h4></center>
+       <center><input type="text" name="student" id="total"></center>
+
+    </div>
+    <div class="menu7">
+        <center><h4>Male</h4></center>
+        <center><input type="text" name="student" id="total"></center>
+        
+
+    </div>
+     <div class="menu8">
+        <center><h4>Female</h4></center>
+        <center><input type="text" name="student" id="total"></center>
+
+    </div> 
+    </div>
+    <div class="menu2">
+        <form>
+        <label for"name">Name</label><br>
+       <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        <label for"email" id="email">email</label><br>
+       <input type="email" id="email" name="email" placeholder="example@example.com"><br><br>
+        <label for"program" id="program">Program</label><br>
+        <input type="text" id="program" name="program" placeholder="program"><br><br>
+        <label for"studentID" id="studentid">Student ID</label><br>
+        <input type="text" id="studentid" name="studentid" placeholder="program"><br><br>
+        <label for"year" id="year">Year</label><br>
+        <input type="text" id="year" name="year" placeholder=""><br><br>
+        <label for"gender" id="gender"> Gender</label><br>
+        <input type="text" id="gender" name="gender" placeholder=""><br><br>
+        <label for"session" id="session">Session</label><br>
+        <label for"session" id="session">Regular</label>
+
+        <input type="radio" id="session" name="session" placeholder="Session">
+        <label for"session" id="session">feepaying</label>
+        <input type="radio" id="session" name="session" placeholder="Session"><br><br>
+        <label for"Scholarship" id="scholarship">Scholarship</label><br>
+        <label for"Scholarship" id="scholarship">Yes</label>
+        <input type="radio" id="scholarship" name="session" placeholder="Session">
+        <label for "Scholarship" id="scholarship">No</label>
+        <input type="radio" id="scholarship" name="session" placeholder="Session"><br><br>
+
+    
+        <button type="button" class="button" id="create-btn">Add</button>
+        <button type="button" class="button" id="read">Edit</button>
+        <button type="button" class="button" id="update">Dellete</button>
+        
+       
+    
+
+        <center><table id="my-table">
+            <thead>
+                    <tr class="table-row">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Program</th>
+                        <th>Student_ID</th>
+                        <th>Year</th>
+                        <th>Session</th>
+                        <th>Scholarship</th>
+                        <th>Gender</th>
+                    
+            
+                    </tr>
+                    <thead>
+                    <tbody id="tBody"> 
+                        
+                    </tbody>
+                   
+                    
+                </table></center>
+            
+</form>
+    </div>
+    
+    <script src="home.js"></script>
+       
+
+</body>
+</html>
